@@ -14,11 +14,11 @@ export class ServiceRestService {
   ) { }
 
   getAllPerson (){
-    return this.http.get<any>(environment.Url_apiBD+ "Persona/todos");
+    return this.http.get<any>(environment.Url_apiBD+ "todos");
   }
 
   createPerson(person : Person){
-    return this.http.post(environment.Url_apiBD+ "Person/save", person);
+    return this.http.post(environment.Url_apiBD+ "/save", person);
   }
 
   updatePerson(idPerson: String){

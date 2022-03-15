@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
 
-  Url_apiBD : 'https://back-asdgrupo.herokuapp.com/api/'
+  Url_apiBD : 'https://softtekbackend.herokuapp.com/api/persona/'
 };
 
 /*

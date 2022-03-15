@@ -20,7 +20,8 @@ export class CrudComponent implements OnInit {
     id:null,
     name : null,
     lastName : null,
-    empleado : null,
+    dni : null,
+    employee : null,
   }
   constructor(
     private serviceRestService: ServiceRestService,

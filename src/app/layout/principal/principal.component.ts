@@ -19,11 +19,12 @@ export class PrincipalComponent {
   showTableType: boolean = false;
   optionsBusqueda: Array<Busqueda>;
 
-  person : Person ={
+  person : Person  ={
     id : null,
     name : null,
     lastName  : null,
-    empleado : null,
+    dni : null,
+    employee : null,
   }
 
   active : Person[]=[];
@@ -48,12 +49,12 @@ export class PrincipalComponent {
   getPersons(){
     this.serviceRestService.getAllPerson()
     .subscribe( data=>{
-      this.person = data
+      this.active = data
     })
 
     this.serviceRestService.getAllPerson()
     .subscribe( data=>{
-      this.person = data
+      this.active = data
     })
 
     console.log(this.person);
